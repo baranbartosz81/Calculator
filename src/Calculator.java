@@ -1,6 +1,16 @@
-public class Main {
+public class Calculator {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public double addSome (double number1, double number2) {
+        return number1 + number2;
     }
+    public double substractSome (double number1, double number2) {
+        return number1 - number2;
+    }
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        double result = calculator.addSome(4,35);
+        System.out.println(result);
+    }
+
+
 }
